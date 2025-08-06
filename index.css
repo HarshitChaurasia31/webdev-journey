@@ -1,0 +1,24 @@
+body{
+    background-color: blanchedalmond;
+}
+span{
+    font-style: normal;
+    color:orangered;
+}
+#end{
+    font-style: italic;
+    background-color: coral;
+    color: whitesmoke;
+}
+.img{
+    background-color: gainsboro;
+}
+table{
+    border:1.5px solid black;
+}
+th{
+    border: 2px solid salmon;
+}
+td{
+    border:2px solid salmon;
+}

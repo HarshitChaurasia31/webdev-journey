@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--this is my first html program-->
+<!--language is not case sensitive-->
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page - Harshit Chaurasia</title>
+    <link rel="stylesheet" href="index.css">
+ </head>
+<!--this is a body tag-->
+ <body>
+   <header>
+      <div id="logo" class="img">
+         <a href="index.html" target="_self"><img src="https://lh3.googleusercontent.com/a/ACg8ocKEF9LQPLX6YFQl4Gn-swnHF9O7aoB_2t0_2k9vS0NXVBDwzDI=s288-c-no" alt="Profile Photo" height="70"></a>
+         <h1><u>Name:</u>Harshit Chaurasia</h1>
+         <h1><u>Age</u>:18</h1>
+      </div>
+   </header>
+   <main>
+      <div>
+      <table>
+         <tr>
+            <th>Programming Language</th>
+            <th>Compiler</th>
+         </tr>
+         <tr>
+            <td>HTMl</td>
+            <td>VS Code</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td rowspan="2">Codeblocks</td>
+         </tr>
+         <tr>
+            <td>C++</td>
+         </tr>
+      </table>
+      </div>
+   <nav id="Links">
+    <h2>My basic information is linked below:</h2>
+   <ol>
+    <li><a href=educational.html target="_main">My Education</a></li>
+   <li><a href=experience.html target="_main">My Experience</a></li>
+    <li><a href=projects.html target="_main">My Project></a></li>
+   </ol>
+   </nav>
+    <div id="Social" class="img">
+    <h2>My Social's:</h2>
+    <br>
+    <a href="https://github.com/Radaxo31" target="_main"><img src="https://www.pikpng.com/pngl/m/256-2562286_github-logo-png-github-clipart.png" alt="Github profile" height="100",></a>
+    <a href="https://www.linkedin.com/in/harshit-chaurasia-radaxo/" target="_main"><img src="https://static.vecteezy.com/system/resources/previews/018/930/480/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="Linkedin Profile" height="100" ></a>
+   </div>
+   <form action="post">
+   <div id="feedback">
+      <h3>Enter your valuable feedback:</h3>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username">
+      </div>
+      <div id="selector">
+      <input type="radio" name="gender" id="male" value="Male">
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="Female">
+      <label for="female">Female</label>
+      </div>
+      <div id="comm">
+         <label for="comment">Enter your feedback</label>
+         <br>
+         <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
+      </div>
+      <div id="langselector">
+        <label for="lang">Select your favourite coding language:</label>
+<select name="coding_language" id="lang">
+  <option value="" disabled selected>Select a language</option>
+  <option value="C">C</option>
+  <option value="C++">C++</option>
+  <option value="C#">C#</option>
+  <option value="Java">Java</option>
+  <option value="Python">Python</option>
+  <option value="JavaScript">JavaScript</option>
+  <option value="TypeScript">TypeScript</option>
+  <option value="PHP">PHP</option>
+  <option value="Ruby">Ruby</option>
+  <option value="Swift">Swift</option>
+  <option value="Kotlin">Kotlin</option>
+  <option value="Go">Go (Golang)</option>
+  <option value="Rust">Rust</option>
+  <option value="R">R</option>
+  <option value="Perl">Perl</option>
+  <option value="Scala">Scala</option>
+  <option value="Dart">Dart</option>
+  <option value="SQL">SQL</option>
+  <option value="MATLAB">MATLAB</option>
+  <option value="Assembly">Assembly</option>
+</select>
+      </div>
+    </form>
+    <!--
+<div>
+    <video src="berlin.mp4" height="250" controls muted poster="https://images.immediate.co.uk/production/volatile/sites/3/2021/12/money-heist-berlin-3d9677f.jpg?quality=90&resize=980,654"></video>
+    <audio src="https://youtu.be/k0Ka-deab1s?si=2pbK7NToTybO1MMq" controls preload="metadata"></audio>
+    <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40" stroke="red" stroke-width="3" fill="blue"/>
+    </svg>
+    <iframe src="https://en.wikipedia.org/wiki/Main_Page" frameborder="100" height="250"></iframe>
+</div>
+-->
+
+   </main>
+   <hr style="border: 3px solid black;">
+   <footer id="end">
+   <div id="checkbox">
+      <input type="checkbox" name="T&c" id="Terms&Condition" value="Yes">
+      <label for="TermsCondition">Terms&Condition</label>
+      <a href="Terms and conditon.html" target="_main">Click here to read</a>
+      </div>
+    <p>Thank you for visiting my page contact me at:</p> 
+    <a href="mailto:harshitchaurasia153@gmail.com" target="_main">To contact for any help</a>
+   </footer>
+ </body>
+</html>
