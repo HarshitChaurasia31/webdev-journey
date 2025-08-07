@@ -4,22 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDUCATION</title>
+    <style>
+        /* Element selector */
+        body{
+            background-color: black;
+        }
+        /* Class selector */
+        .result{
+            background-color: gray;
+        }
+        /* Id Selector */
+        #JEE{
+            background-color: antiquewhite;
+        }
+        /* Child Selector */
+        footer > p{
+            background-color: grey;
+            color: aqua;
+        }
+        /* Descenedent Selector */
+        footer p {
+            background-color: aquamarine;
+            color: black;
+        }
+        /* Universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="https://lh3.googleusercontent.com/a/ACg8ocKEF9LQPLX6YFQl4Gn-swnHF9O7aoB_2t0_2k9vS0NXVBDwzDI=s288-c-no" alt="Profile Photo" height="75"><b>Home Page</b></a>
+        <a href="index.html"><img src="https://lh3.googleusercontent.com/a/ACg8ocKEF9LQPLX6YFQl4Gn-swnHF9O7aoB_2t0_2k9vS0NXVBDwzDI=s288-c-no" alt="Profile Photo" height="75"><b>Profile Page</b></a>
         <hr />
     </header>
-    <main>
-        <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/CISCE_logo.png" alt="ICSE" height="50"<p><b>CLASS X:</b>ST MARY'S CONVENT SCHOOL || Board:ICSE || PERCENTAGE:92</p>
+    <main class="result">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/CISCE_logo.png" alt="ICSE" height="50"><p><b>CLASS X:</b>ST MARY'S CONVENT SCHOOL || Board:ICSE || PERCENTAGE:92</p>
         <hr />
-        <img src="https://static.toiimg.com/thumb/msid-109851715,width-400,resizemode-4/109851715.jpg" height="50" <p><b>CLASS XII:</b>RYAN INTERNATIONAL SCHOOL || Board:CBSE || PERCENTAGE:88</p>
+        <img src="https://static.toiimg.com/thumb/msid-109851715,width-400,resizemode-4/109851715.jpg" height="50"> <p><b>CLASS XII:</b>RYAN INTERNATIONAL SCHOOL || Board:CBSE || PERCENTAGE:88</p>
         <hr />
-        <img src="https://www.livelaw.in/h-upload/2021/09/14/1600x960_400572-4pune-jee-main-results-decla-1599551417.jpg" height="50"<p><b>JEE PERCENTILE:</b>78.9</P>
+    <main class="result" id="JEE">
+        <img src="https://www.livelaw.in/h-upload/2021/09/14/1600x960_400572-4pune-jee-main-results-decla-1599551417.jpg" height="50"><p><b>JEE PERCENTILE:</b>78.9</P>
     </main>
+        </main>
     <footer>
         <hr />
         <i>Trying to the best<img src="https://hips.hearstapps.com/hmg-prod/images/red-heart-64308e503e5fe.jpg" height="20"></i>
+        <div>
+            <p>Thank you for visiting</p>
+        </div>
+        <p>Thank you for visiting</p>
     </footer>
 </body>
 </html>
