@@ -1,9 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
     background-color: blanchedalmond;
 }
-span{
-    font-style: normal;
+h1{
+    font-family: "Poppins", sans-serif;
+}
+nav{
+    font-family: "Mozilla Headline", sans-serif;
+    font-weight: 500;
     color:orangered;
+}
+h2{
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+}
+#lor{
+    color: midnightblue;
+    line-height: 2;
+    letter-spacing: 3px;
 }
 #end{
     font-style: italic;
@@ -11,7 +25,7 @@ span{
     color: whitesmoke;
 }
 .img{
-    background-color: gainsboro;
+    background-color:gainsboro;
 }
 table{
     border:1.5px solid black;
@@ -21,4 +35,8 @@ th{
 }
 td{
     border:2px solid salmon;
+}
+#logo{
+    text-align: center;
+    background-color: #004B4B;
 }
