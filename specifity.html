@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS specifity</title>
+    <style>
+        /* Specifity 1 */
+        h1{
+            color: black;
+        }
+        /* Specifity 1+10=11 */
+        h1.yellow{
+            color: yellow;
+        }
+        /* Specifity 10 */
+        .red{
+            color: red;
+        }
+        /* Specifity 1 */
+        p{
+            color: magenta !important;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="yellow red purple">Inline>id>class or attribute>element>universal</h1>
+    <p style="color: maroon;">Important after color overwrites inline also</p>
+    <p>specifity universal=0 element=1 class or attribute=10 element=100 inline=1000</p>
+</body>
+</html>
