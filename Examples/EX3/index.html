@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card designing</title>
+    <style>
+        *{
+            background-color: rgb(49, 49, 49);
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            border: 4px solid black;
+            border-radius: 15px;
+            position: absolute;
+            padding: 35px;
+            margin: 130px;
+            width: 22vw;
+            height: 400px;
+            color: aliceblue;
+        }
+        .box1{
+            height: 200px;
+            position: relative;
+            top: -18px;
+            left: 15px;
+        }
+        img{
+            border-radius: 15px;
+        }
+        .box2 ul li{
+            position: relative;
+            top: -30px;
+            display: inline-flex;
+            border: 2px solid black;
+            border-radius: 15px;
+            color: beige;
+            background-color: brown;
+        }
+        .box3 h1{
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+            top: -12px;
+        }
+        .box4{
+            border: 4px solid blue;
+            border-radius: 15px;
+            background-color: lightblue;
+            color: blue;
+            position: relative;
+            top: 20px;
+            width: 80px;
+            height: 30px;
+            text-align: center;
+            left: 110px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box box1">
+            <img src="rdr2.jpg" alt="Red dead redemption 2">
+        </div>
+        <div class="box box2">
+            <ul>
+                <li>Video Game</li>
+                <li>Cowboy</li>
+            </ul>
+        </div>
+        <div class="box box3">
+            <h1>Red Dead Redemption 2</h1>
+            <p>Red Dead Redemption 2 is a breathtaking open-world game with stunning visuals, immersive storytelling, deep characters, emotional moments, realistic details, thrilling missions, and endless exploration, making it a masterpiece in gaming history.</p>
+        </div>
+        <div class="box box4">
+            Read More
+        </div>
+    </div>
+</body>
+</html>
+<!-- Better Code -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Designing</title>
+  <style>
+    /* Reset + Background */
+    body {
+      background-color: rgb(49, 49, 49);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Card Container */
+    .parent {
+      background-color: #2b2b2b;
+      border: 4px solid black;
+      border-radius: 15px;
+      padding: 20px;
+      width: 300px;
+      color: aliceblue;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
+    }
+
+    /* Image */
+    .box1 {
+      height: 180px;
+      overflow: hidden;
+      border-radius: 15px;
+    }
+    .box1 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    /* Category Badges */
+    .box2 ul {
+      display: flex;
+      gap: 10px;
+      list-style: none;
+      margin: 15px 0 10px 0;
+      padding: 0;
+    }
+    .box2 ul li {
+      padding: 5px 12px;
+      border-radius: 15px;
+      color: beige;
+      background-color: brown;
+      font-size: 14px;
+    }
+
+    /* Title + Description */
+    .box3 h1 {
+      font-size: 20px;
+      margin: 10px 0 8px;
+    }
+    .box3 p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* Button */
+    .box4 {
+      display: inline-block;
+      background-color: lightblue;
+      color: blue;
+      border-radius: 15px;
+      padding: 8px 15px;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-align: center;
+    }
+    .box4:hover {
+      background-color: blue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="box box1">
+      <img src="rdr2.jpg" alt="Red Dead Redemption 2">
+    </div>
+    <div class="box box2">
+      <ul>
+        <li>Video Game</li>
+        <li>Cowboy</li>
+      </ul>
+    </div>
+    <div class="box box3">
+      <h1>Red Dead Redemption 2</h1>
+      <p>Red Dead Redemption 2 is a breathtaking open-world game with stunning visuals, immersive storytelling, deep characters, emotional moments, realistic details, thrilling missions, and endless exploration.</p>
+    </div>
+    <div class="box box4">
+      Read More
+    </div>
+  </div>
+</body>
+</html> -->
