@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS media query</title>
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+        @media screen and (orientation: landscape) {
+            body{
+                border: 5px solid salmon;
+            }
+        }
+        @media only screen and (max-width:500px){
+            body{
+                background-color: blue;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        .boxes{
+            display: flex;
+        }
+        .box{
+            margin: 5px;
+            padding: 5px;
+            width: 350px;
+            height:350px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Blue body
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
