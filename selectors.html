@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        /* .boxes *{
+            border: 3px solid saddlebrown;
+            color: blue;
+        }
+        p , a , .box, [data-color="primary"]{
+            padding: 10px 10px;
+        } */
+        /* .box :nth-child(odd){
+            background-color: aqua;
+        } */
+        .boxes::before{
+            content: "Lion is good";
+         }
+        .boxes::after{
+            content: "Chetah is also good";
+        }
+        ::selection{
+            background-color: aqua;
+            color: blue;
+        }
+        .box::first-letter{
+            color: rgb(254, 7, 7);
+        }
+        input::placeholder{
+            color: rgb(149, 131, 131);
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="Type your suggestion">
+    </div>
+
+
+</body>
+</html>
