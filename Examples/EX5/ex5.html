@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 5</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Mozilla+Headline:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            background-color: black;
+            gap: 25px;
+            padding: 20px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul{
+            display: flex;
+            gap: 35px;
+            padding: 15px 0 0 5px;
+            list-style: none;
+        }
+        nav ul li{
+            color: aliceblue;
+            font-family:  "Mozilla Headline", sans-serif;
+        }
+        nav img {
+            width: 60px;
+        }
+        nav div img{
+            width: 75px;
+            padding-left: 1000px;
+        }
+        .box{
+            display: flex;
+            background-color: gray;
+            padding: 30px;
+            justify-content: space-around;
+        }
+        .ibox{
+            border: 4px solid black;
+            height: 700px;
+            width: 500px;
+             box-shadow: 9px 9px 8px rgba(0, 0, 0, 0.5);
+        }
+        .in1 img{
+            width: 500px;
+            height: 275px;
+        }
+        .ibox h2{
+            padding: 20px 25px;
+            font-family: "Poppins", sans-serif;
+            color:beige;
+        }
+        .in2 img{
+            width: 500px;
+            height: 275px;
+        }
+        .ibox p{
+            font-size: 20px;
+            padding: 0 22px;
+            font-family: "Baloo Bhai 2", sans-serif;
+        }
+        .in2 p{
+            font-size: 19px;
+        }
+        .capsule{
+            padding-left: 190px;
+            padding-top: 30px;
+        }
+        .caps2{
+            padding-top: 20px;
+        }
+        .capsule button{
+            text-align: center;
+            background-color: lightblue;
+            color: blue;
+            padding: 3px;
+            border: none;
+            border-radius: 15px;
+        }
+        .caps2 button{
+            padding: 3px;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+        .fbox{
+            background-color: lightgoldenrodyellow;
+            border: 3px solid burlywood;
+            border-radius: 10px ;
+            text-align: center;
+            padding: 100px 100px;
+        }
+        .stickimage{
+            position: fixed;
+            bottom: 0;
+            right: 5px;
+            z-index: 1000;
+        }
+        .stickimage img{
+            width: 60px;
+        }
+        .footerbox{
+            padding: 100px 50px;
+            font-family: "Mozilla Headline", sans-serif;
+            color: aliceblue;
+            background-color: black;
+        }
+        /* .footerbox *{
+            background-color: black;
+        } */
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="bmw-logo-683.png" alt="BMW logo" >
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+            <li>Services</li>
+            <!-- <li><img src="bmw-logo-675.png" alt="motorsport" ></li> -->
+        </ul>
+        <div>
+            <img src="bmw-logo-675.png" alt="Motorsport logo">
+        </div>
+    </nav>
+    <div class="box out">
+        <div class="ibox in1">
+            <img src="https://www.bmw.in/content/dam/bmw/marketIN/bmw_in/all-models/x-series/x1/2025/x1-banner-image-optimised-1680x756.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1738219570846.jpg" alt="BMW X1 image">
+            <h2>BMW X1</h2>
+            <p>The BMW X1 is a premium compact SUV that blends sporty design with everyday practicality. It features a bold exterior, advanced technology, and a spacious interior that ensures comfort for both driver and passengers. With efficient engines, agile handling, and the signature BMW driving dynamics, the X1 is ideal for city driving as well as long journeys, offering a balance of performance and versatility.</p>
+            <div class="capsule caps1">
+                 <button>Read More</button>
+            </div>
+        </div>
+        <div class="ibox in2">
+            <img src="https://bmw.scene7.com/is/image/BMW/g90_intro:16to7?fmt=webp&wid=2560&hei=1120" alt="BMw X5 img">
+            <h2>BMW M5</h2>
+            <p>The BMW X5 is a luxury midsize SUV that delivers power, sophistication, and advanced innovation. Known for its commanding road presence, it combines robust performance with refined comfort. The X5 offers powerful engine options, intelligent all-wheel drive, and cutting-edge driver assistance systems. Its premium interior, spacious seating, and advanced infotainment make it a perfect choice for those seeking a blend of luxury, practicality, and adventure.</p>
+            <div class="capsule caps2">
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class="fbox">
+        <h2>Welcome to Bavarian Motor Works</h2>
+    </div>
+    <div class="stickimage">
+        <img src="bmw-logo-683.png" alt="">
+    </div>
+    <div class="footerbox">
+        <h2>Contact us at:</h2>
+        <p>1234567890</p>
+    </div>
+</body>
+
+</html>
