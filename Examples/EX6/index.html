@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excercise 6</title>
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Mozilla+Headline:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+     *{
+        margin: 0;
+        padding: 0;
+     }
+     body{
+        background-color: black;
+     }
+      nav ul {
+        background-color: white;
+        padding: 25px 150px;
+        display: flex;
+        justify-content: space-around;
+        gap: 90px;
+      }
+      ul {
+        list-style: none;
+      }
+      .img1 {
+        width: 120px;
+      }
+      .img2 {
+        width: 20px;
+        align-self: center;
+      }
+      .center {
+        align-self: center;
+      }
+      .box {
+        font-weight: bold;
+        border: 1.5px solid black;
+        padding: 8px;
+      }
+      .box:hover{
+        color: lightgray;
+      }
+      .dropdown ul {
+        display: flex;
+        padding: 15px;
+        align-self: center;
+        gap: 30px;
+      }
+      .dropdown ul li {
+        align-self: center;
+        font-size: 9px;
+        font-family: "Poppins", sans-serif;
+      }
+      .end ul{
+        display: flex;
+        padding: 10px;
+        gap: 20px;
+      }
+      .end ul li{
+        align-self: center;
+        font-size: 9px;
+        font-family:  "Mozilla Headline", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><img src="Frame-1-2.png" alt="Ultaedit" class="img1" /></li>
+        <li>
+          <div class="dropdown">
+            <ul>
+              <li>Products</li>
+              <li>Pricing</li>
+              <li>Resources</li>
+              <li>Our Company</li>
+            </ul>
+          </div>
+        </li>
+        <!-- <li class="center">Products</li>
+            <li class="center">Pricing</li>
+            <li class="center">Resources</li>
+            <li class="center">Our Company</li>
+            <li class="end box">BUY NOW</li> -->
+        <!-- <li class="end">English</li> -->
+        <li>
+          <div class="end">
+            <ul>
+              <li class="box">BUY NOW</li>
+              <li><img src="globe_7164596.png" alt="" width="12px" class="img3">English</li>
+              <li><img src="loupe.png" alt="Search" class="img2" /></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
