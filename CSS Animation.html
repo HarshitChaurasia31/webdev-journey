@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: burlywood;
+            width: 80vw;
+            height: 80vh;
+        }
+        .box{
+            /* background-color: aquamarine; */
+            width: 8vw;
+            height: 8vh;
+            /* animation: MeraAnimation;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-delay: 1s;
+            animation-direction: alternate-reverse;
+            animation-play-state: paused;*/
+            animation: MeraAnimation 2s ease-in 1s 1 forwards , Mera 2s ease-in-out 2s 1;
+        }
+        @keyframes MeraAnimation {
+            from{
+               background-color: lightseagreen;
+            }
+            to{
+                background-color: aquamarine;
+                 transform: translateX(100px);
+            }
+        }
+        @keyframes Mera {
+            0%{
+                transform: rotate(0deg);
+            }
+            20%{
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            80%{
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
