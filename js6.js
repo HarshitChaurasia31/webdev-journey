@@ -1,0 +1,15 @@
+console.log("This is a string tutorial");
+let a="Harshit";
+console.log(a[3]);
+console.log(a.length);
+let my_name="Harry";
+let friend="Harshit";
+console.log("My name is",my_name,"And my friends name is",friend);
+console.log(`My name is ${my_name} and my friend name is ${friend}`);
+let b="Shivam";
+console.log(b.toUpperCase());
+console.log(b.toLowerCase());
+console.log(b.slice(1,4));
+console.log(b.slice(2));
+console.log(b.replace("Shiv","R"));
+console.log(b.concat(a,"Ravi"));
