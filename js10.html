@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting and removing</title>
+    <style>
+        .container{
+            border: 4px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container red blue green">
+        <div class="box">Namaste</div>
+        <div class="box">Hello</div>
+        <script>
+            // let div=document.createElement("div");
+            // div.innerHTML="Hello there";
+            // div.setAttribute("class","created");    
+            // document.querySelector(".container").append(div)
+            let con=document.querySelector(".container");
+            con.insertAdjacentHTML("afterbegin","<b>Helllooooo kaise ho</b>")
+        </script>
+    </div>
+</body>
+</html>
+<!-- document.queryselector(".box").hasAttribute("Style") to check wheter it is there or not
+document.queryselector(".box").getAttribute("Style") to know what type is it
+document.queryselector(".box").setAttribute("Style") to set 
+document.queryselector(".box").removeAttribute("style")-->
