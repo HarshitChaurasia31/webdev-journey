@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 13</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(19, 19, 19);
+        }
+        .container{
+            display: flex;
+            margin: 10px;
+            padding: 15px;
+            gap: 20px;
+        }
+        /* .img{
+            margin: 10px;
+            padding: 10px;
+        } */
+        .img1{
+            position: relative;
+            display: flex;
+        }
+        img{
+            border-radius: 10px;
+        }
+        .title p{
+            color: white;
+        }
+        .pos{
+            background-color: rgba(0, 0, 0, 0.5);
+            color: rgb(236, 234, 234);
+            position: absolute;
+            bottom: 4px;
+            right: 5px;
+            border-radius: 5px;
+            padding: 2px;
+        }
+        .title ul{
+            list-style: none;
+            display: flex;
+            gap:20px;
+            color: rgb(138, 138, 138);
+            padding-top: 10px;
+            font-size: 13px;
+        }
+        .titlesize{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ" alt="thumbnail">
+            <p class="duration"></p>
+        </div>
+        <div class="title info">
+            <p class="video"></p>
+            <ul>
+                <li class="channelname"></li>
+                <li class="views"></li>
+                <li class="older"></li>
+            </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
