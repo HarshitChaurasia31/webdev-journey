@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbeling</title>
+    <style>
+        .container{
+            margin: 5px;
+            padding: 15px;
+            background-color:brown;
+        }
+        section {
+            margin: 5px;
+            padding: 25px;
+            background-color: burlywood;
+        }
+        .child{
+            margin: 5px;
+            padding: 5px;
+            background-color: antiquewhite;
+            border: 2px solid black;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="box">Hey I am a box</div>
+    </div>
+    <button id="btn">Click me</button> -->
+    <div class="container">
+        <section class="childcontainer">
+            <div class="child">
+                I am a child
+            </div>
+        </section>   
+    </div>
+    <script>
+        function getrandom(){
+            let x=Math.floor(Math.random()*256)
+            let y=Math.floor(Math.random()*256)
+            let z=Math.floor(Math.random()*256)
+            return `rgb(${x},${y},${z})`
+        }
+        document.querySelector(".child").addEventListener("click" , (e)=>{
+            e.stopPropagation()
+            alert ("Child was clicked")
+        })
+        document.querySelector(".childcontainer").addEventListener("click", (e)=>{
+            e.stopPropagation()
+            alert ("Childcontainer was clciked")
+        })
+        document.querySelector(".container").addEventListener("click", (e)=>{
+            // e.stopPropagation()
+            alert ("Child was his father")
+        })
+        setInterval(() => {
+            document.querySelector(".childcontainer").style.backgroundColor = getrandom();
+        }, 500);
+        // setTimeout(() => {
+        //     document.querySelector(".childcontainer").style.backgroundColor = getrandom();
+        // }, 500);
+    </script>
+    <!-- <script src="js11.js"></script> -->
+</body>
+</html>
